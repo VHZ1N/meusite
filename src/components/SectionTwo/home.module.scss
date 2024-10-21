@@ -1,0 +1,195 @@
+.container {
+    background: rgb(26, 0, 36);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: flex-end;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-family: Syne;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 51.2px;
+        max-width: 900px;
+        margin-inline: auto;
+    }
+    span {
+        //Lembrar de pegar o Keyframe
+        position: relative;
+        display: inline;
+        background: linear-gradient(
+            270deg,
+            #00c2ff,
+            #33ff8c,
+            #ffc640,
+            #e54cff,
+            #00c2ff,
+            #33ff8c
+        );
+        background-size: 600% auto;
+        color: transparent;
+        background-clip: text;
+        animation: shift 5s linear infinite;
+    }
+}
+
+.Bottom {
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    padding-block: 35px;
+}
+
+.leftBox,
+.rightBox {
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+    padding-inline: 30px;
+    gap: 30px;
+}
+.leftBox {
+    border-radius: 5px;
+    background: linear-gradient(0deg, #000001, #202021);
+}
+
+.rightBox {
+    border-radius: 5px;
+    background: linear-gradient(0deg, #1f0027, #3d113e);
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    h5 {
+        color: #fff;
+        text-align: center;
+        font-family: Syne;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}
+
+.topics,
+.pros {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    .buttonLink {
+        background: #8000ff;
+        box-shadow: 0px 10px 50px 0px rgba(151, 5, 180, 0.56);
+        padding-inline: 40px;
+        padding-block: 20px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 15px;
+
+        color: #fff;
+        text-align: center;
+        font-family: Syne;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+
+@keyframes shift {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding-top: 30px;
+        max-width: 100%;
+        padding-inline: 15px;
+    }
+
+    .title {
+        gap: 10px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+            max-width: 100%;
+        }
+
+        span {
+            background-size: 300% auto;
+            animation: shift 3s linear infinite;
+        }
+    }
+
+    .Bottom {
+        gap: 30px;
+        padding-block: 20px;
+    }
+
+    .leftBox,
+    .rightBox {
+        padding-block: 20px;
+        padding-inline: 15px;
+        gap: 20px;
+    }
+
+    .titleBox h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .topics p,
+    .pros p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .button .buttonLink {
+        padding-inline: 20px;
+        padding-block: 10px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

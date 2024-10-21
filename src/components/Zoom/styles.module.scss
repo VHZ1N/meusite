@@ -1,0 +1,161 @@
+.zoomSection {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #1c0030;
+
+    position: relative;
+
+    overflow: hidden;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: Syne;
+
+    color: #040122;
+}
+
+.zoomText {
+    font-size: 50px;
+
+    text-align: center;
+
+    font-weight: 900;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+    color: white;
+
+    transform-origin: center center;
+
+    position: absolute;
+
+    font-family: Syne;
+
+    span {
+        position: relative;
+
+        display: inline;
+
+        background: linear-gradient(
+            270deg,
+            #00c2ff,
+            #33ff8c,
+            #ffc640,
+            #e54cff,
+            #00c2ff,
+            #33ff8c
+        );
+
+        background-size: 600% auto;
+
+        color: transparent;
+
+        background-clip: text;
+
+        animation: shift 5s linear infinite;
+    }
+}
+
+.nextText {
+    font-size: 48px;
+
+    text-align: center;
+
+    font-weight: 900;
+
+    color: #040122;
+
+    text-align: left;
+
+    bottom: 0;
+
+    transform: translateY(100%);
+
+    font-family: Syne;
+
+    opacity: 0;
+
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nextTextMobile {
+    font-size: 24px;
+
+    text-align: center;
+
+    font-weight: 900;
+
+    color: #040122;
+
+    display: none;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+    bottom: 0;
+
+    transform: translateY(100%);
+
+    font-family: Syne;
+
+    opacity: 0;
+
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.textWrap {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3rem;
+}
+
+@media (max-width: 480px) {
+    .zoomSection {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .zoomText {
+        font-size: 50px;
+        text-align: center;
+        line-height: 1.2;
+        position: relative;
+        span {
+            background-size: 300% auto;
+            animation: shift 3s linear infinite;
+        }
+    }
+
+    .nextText {
+        font-size: 45px;
+        text-align: center;
+        opacity: 1;
+        transform: translateY(0);
+        padding-bottom: 20px;
+    }
+
+    .textWrap {
+        gap: 1.5rem;
+    }
+}
