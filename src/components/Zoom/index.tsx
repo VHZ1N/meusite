@@ -21,7 +21,10 @@ const Zoom = () => {
                 gsapModule.default.registerPlugin(scrollTriggerInstance);
 
             const isMobile = window.innerWidth <= 768;
-            const isSmallMobile = window.innerWidth <= 480;
+            const isSmallMobile =
+                window.innerWidth <= 480 && window.innerWidth >= 449;
+            const isLittleMobile =
+                window.innerWidth <= 448 && window.innerWidth >= 420;
 
             let scale, xPercent, yPercent;
 
@@ -29,6 +32,8 @@ const Zoom = () => {
                 (scale = 400), (xPercent = 0), (yPercent = -1500);
             } else if (isMobile) {
                 (scale = 170), (xPercent = -500), (yPercent = -4500);
+            } else if (isLittleMobile) {
+                (scale = 1000), (xPercent = -800), (yPercent = -15000);
             } else {
                 (scale = 700), (xPercent = -4300), (yPercent = -50);
             }
