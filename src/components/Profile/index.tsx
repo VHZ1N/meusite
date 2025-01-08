@@ -10,14 +10,14 @@ const Profile = () => {
                     </h1>
                     <h2>Caso você não me conheça, aqui vai um breve resumo:</h2>
                     <p>
-                        A quase 1 ano no mercado de programação, busco trazer
-                        soluções tecnológicas e inovadoras para negócios físicos
-                        que ainda não se posicionaram na internet, formando em
-                        Análise e Desenvolvimento de Sistemas, busquei fazer
-                        mais cursos por fora para me especializar na{' '}
-                        <span>Criação de Sites</span> e hoje possou conhecimento
-                        nas liguagens de JavaScipt, React.Js, Sass, HTML, CSS e
-                        TailwindCSS.
+                        A pouco mais de 1 ano no mercado de programação, busco
+                        trazer soluções tecnológicas e inovadoras para negócios
+                        físicos que ainda não se posicionaram na internet,
+                        formando em Análise e Desenvolvimento de Sistemas,
+                        busquei fazer mais cursos por fora para me especializar
+                        na <span>Criação de Sites</span> e hoje possou
+                        conhecimento nas liguagens de JavaScipt, React.Js, Sass,
+                        HTML, CSS e TailwindCSS.
                     </p>
                     <div className={styles.button}>
                         <a

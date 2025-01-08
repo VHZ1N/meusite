@@ -3,7 +3,7 @@
 
     display: flex;
     width: 100%;
-    background-color: rgba($color: #11001c, $alpha: 1);
+    background-color: rgba($color: #1c002f, $alpha: 1);
     align-items: center;
 }
 
@@ -105,20 +105,20 @@
     img:nth-of-type(2) {
         position: absolute;
         width: 200px;
-        top: 3800px;
+        top: 3250px;
         rotate: -15deg;
     }
     img:nth-of-type(3) {
         position: absolute;
         width: 200px;
-        top: 3800px;
+        top: 3250px;
         right: 55px;
         rotate: 15deg;
     }
     img:nth-of-type(4) {
         position: absolute;
         width: 190px;
-        top: 3800px;
+        top: 3325px;
         right: 170px;
     }
 }
